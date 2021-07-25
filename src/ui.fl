@@ -1,0 +1,40 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0400
+header_name {.h}
+code_name {.cxx}
+class UserInterface {open
+} {
+  Function {make_window()} {open
+  } {
+    Fl_Window {} {
+      label {MKV Audio Extractor} open selected
+      xywh {840 370 550 130} type Double align 5 visible
+    } {
+      Fl_Group buttons {open
+        xywh {30 10 510 125}
+      } {
+        Fl_Button button_input_file {
+          label File
+          xywh {30 15 95 25}
+        }
+        Fl_Button button_output {
+          label Output
+          xywh {30 52 95 25}
+        }
+        Fl_Button button_run {
+          label Run
+          xywh {30 90 95 25}
+        }
+      }
+      Fl_Input text_input_file {
+        tooltip {Input file} xywh {150 15 370 25} deactivate
+      }
+      Fl_Input text_output {
+        tooltip {Input file} xywh {150 52 370 25} deactivate
+      }
+      Fl_Output text_messages {
+        xywh {150 90 370 25} deactivate
+      }
+    }
+  }
+}
